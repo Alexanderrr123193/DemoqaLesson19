@@ -3,8 +3,8 @@ package configs;
 import org.aeonbits.owner.Config;
 
 @Config.Sources({
-        "classpath:local.properties",
-        "system:properties"
+        "system:properties",
+        "classpath:${config}.properties"
 })
 public interface TestConfig extends Config {
     @Key("browser.name")
