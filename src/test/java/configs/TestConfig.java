@@ -40,4 +40,3 @@ public interface TestConfig extends Config {
     @DefaultValue("")
     String remoteUrl();
 }
-}
