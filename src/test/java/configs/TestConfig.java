@@ -4,7 +4,8 @@ import org.aeonbits.owner.Config;
 
 @Config.Sources({
         "system:properties",
-        "classpath:${config}.properties"
+        "classpath:${config}.properties",
+        "classpath:credentials.properties"
 })
 public interface TestConfig extends Config {
     @Key("browser.name")
@@ -38,4 +39,5 @@ public interface TestConfig extends Config {
     @Key("remote.url")
     @DefaultValue("")
     String remoteUrl();
+}
 }
